@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.container_first {
+    background-color: gainsboro;
+    border-radius: 20px;
+    border-bottom: 5px solid black;
+    padding-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+header .container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+header h1{
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+}
+header h4 {
+    width: 75px;
+    margin-bottom: 10px;
+}
+.header_container {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.income, .expenses, .total {
+    margin-bottom: 200px;
+}
+.header_amount {
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+/* Main section */
+main .container {
+    max-width: 350px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    padding: 20px 5px;
+}
+.main_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}
+.main_grid a {
+    text-decoration: none;
+    color: darkblue;
+}
+main h2 {
+    font-size: 1rem;
+}
+main h2:first-child {
+    font-size: 0.8rem;
+}
+.month {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 500px) {
+    main .container {
+        max-width: 400px; 
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 700px) {
+    main .container {
+        max-width: 650px; 
+        padding: 20px 50px;
+    }
+    .main_grid h2 {
+        font-size: 1.5rem;
+    }
+    main h2:first-child {
+        font-size: 1.5rem;
+    }
+    .actual h2:last-child {
+        font-size: 1.5rem;
+    }
+}
+
+/* January */
+::placeholder {
+    background-color: red;
+    color: #fff;
+}
+.container_month {
+    max-width: 350px;
+    margin: 0 auto;
+    border-bottom: 5px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: gainsboro;
+}
+.actual {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.actual_second {
+    padding: 10px;
+}
+.initial {
+    margin-bottom: 10px;
+}
+.initial_first {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+#amount, #amount_expense, .initial_second, 
+#amount_feb, #amount_expense_feb, .initial_second_feb,
+#amount_mar, #amount_expense_mar, .initial_second_mar,
+#amount_apr, #amount_expense_apr, .initial_second_apr,
+#amount_may, #amount_expense_may, .initial_second_may,
+#amount_jun, #amount_expense_jun, .initial_second_jun,
+#amount_jul, #amount_expense_jul, .initial_second_jul,
+#amount_aug, #amount_expense_aug, .initial_second_aug,
+#amount_sep, #amount_expense_sep, .initial_second_sep,
+#amount_oct, #amount_expense_oct, .initial_second_oct,
+#amount_nov, #amount_expense_nov, .initial_second_nov,
+#amount_dec, #amount_expense_dec, .initial_second_dec {
+    width: 100px;
+}
+.form_group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid blue;
+}
+.form_group_div {
+    display: flex;
+    flex-direction: column;
+}
+.form_group_div #item, .form_group_div #item_expense, 
+.form_group_div #item_feb, .form_group_div #item_expense_feb,
+.form_group_div #item_mar, .form_group_div #item_expense_mar,
+.form_group_div #item_apr, .form_group_div #item_expense_apr, 
+.form_group_div #item_may, .form_group_div #item_expense_may,
+.form_group_div #item_jun, .form_group_div #item_expense_jun,
+.form_group_div #item_jul, .form_group_div #item_expense_jul, 
+.form_group_div #item_aug, .form_group_div #item_expense_aug,
+.form_group_div #item_sep, .form_group_div #item_expense_sep,
+.form_group_div #item_oct, .form_group_div #item_expense_oct,
+.form_group_div #item_nov, .form_group_div #item_expense_nov, 
+.form_group_div #item_dec, .form_group_div #item_expense_dec {
+   width: 100%;
+}
+.form_group input, .initial_second, .initial_second_feb,
+.initial_second_mar, .initial_second_apr, .initial_second_may,
+.initial_second_jun, .initial_second_jul, .initial_second_aug, 
+.initial_second_sep, .initial_second_oct, .initial_second_nov,
+.initial_second_dec {
+    padding: 3px;
+    border-radius: 5px;
+    text-align: end;
+}
+.btn {
+    background-color: blue;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.row, .row_expense, .row_feb, .row_expense_feb,
+.row_mar, .row_expense_mar,
+.row_apr, .row_expense_apr,
+.row_may, .row_expense_may,
+.row_jun, .row_expense_jun,
+.row_jul, .row_expense_jul,
+.row_aug, .row_expense_aug,
+.row_sep, .row_expense_sep,
+.row_oct, .row_expense_oct,
+.row_nov, .row_expense_nov,
+.row_dec, .row_expense_dec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid violet;
+    /* width: 350px; */
+    margin: 0 auto;
+    
+}
+.row_one {
+    background-color: green;
+    width: 60%;
+}
+.btn_delete {
+    background-color: red;
+    cursor: pointer;
+}
+
+
+

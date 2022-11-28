@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget</title>
+</head>
+<body>
+    <header>
+        <div class="container container_first">
+            <h1>Budget</h1>
+            <div class="header_container">
+                <div>
+                    <h4>Income</h4>
+                    <h3 class="header_amount total_income_year">0</h3>
+                </div>
+                <div>
+                    <h4>Expenses</h4>
+                    <h3 class="header_amount total_expenses_year">0</h3>
+                </div>
+                <div>
+                    <h4>Total</h4>
+                    <h3 class="header_amount total_final_year">0</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="main_grid">
+                <h2 class="month">Month</h2>
+                <a href=""></a>
+                <h2>Income</h2>
+                <h2>Expenses</h2>
+                <h2>Total</h2>
+            </div>
+            <div class="main_grid">
+                <h2>January</h2>
+                <a href="#container_jan">Details</a>
+                <h2 class="income_total_jan">0</h2>
+                <h2 class="expenses_total_jan">0</h2>
+                <h2 class="actual_cash_total_jan">0</h2>
+            </div>
+            <div class="main_grid">
+                <h2>February</h2>
+                <a href="#container_feb">Details</a>
+                <h2 class="income_total_feb">0</h2>
+                <h2 class="expenses_total_feb">0</h2>
+                <h2 class="actual_cash_total_feb">0</h2>
+            </div>
+            <div class="main_grid">
+                <h2>March</h2>
+                <a href="#container_mar">Details</a>
+                <h2 class="income_total_mar">0</h2>
+                <h2 class="expenses_total_mar">0</h2>
+                <h2 class="actual_cash_total_mar">0</h2>
+            </div>
+            <div class="main_grid">
+                <h2>April</h2>
+                <a href="#container_apr">Details</a>
+                <h2 class="income_total_apr">0</h2>
+                <h2 class="expenses_total_apr">0</h2>
+                <h2 class="actual_cash_total_apr">0</h2>
+            </div>
+            <div class="main_grid">
+                <h2>May</h2>
+                <a href="#container_may">Details</a>
+                <h2 class="income_total_may">0</h2>
+                <h2 class="expenses_total_may">0</h2>
+                <h2 class="actual_cash_total_may">0</h2>
+            </div>
+            <div class="main_grid">
+                <h2>June</h2>
+                <a href="#container_jun">Details</a>
+                <h2 class="income_total_jun">0</h2>
+                <h2 class="expenses_total_jun">0</h2>
+                <h2 class="actual_cash_total_jun">0</h2>
+            </div>
+            <div class="main_grid">
+                <h2>July</h2>
+                <a href="#container_jul">Details</a>
+                <h2 class="income_total_jul">0</h2>
+                <h2 class="expenses_total_jul">0</h2>
+                <h2 class="actual_cash_total_jul">0</h2>
+            </div>
+            <div class="main_grid">
+                <h2>August</h2>
+                <a href="#container_aug">Details</a>
+                <h2 class="income_total_aug">0</h2>
+                <h2 class="expenses_total_aug">0</h2>
+                <h2 class="actual_cash_total_aug">0</h2>
+            </div>
+            <div class="main_grid">
+                <h2>September</h2>
+                <a href="#container_sep">Details</a>
+                <h2 class="income_total_sep">0</h2>
+                <h2 class="expenses_total_sep">0</h2>
+                <h2 class="actual_cash_total_sep">0</h2>
+            </div>
+            <div class="main_grid">
+                <h2>October</h2>
+                <a href="#container_oct">Details</a>
+                <h2 class="income_total_oct">0</h2>
+                <h2 class="expenses_total_oct">0</h2>
+                <h2 class="actual_cash_total_oct">0</h2>
+            </div>
+            <div class="main_grid">
+                <h2>November</h2>
+                <a href="#container_nov">Details</a>
+                <h2 class="income_total_nov">0</h2>
+                <h2 class="expenses_total_nov">0</h2>
+                <h2 class="actual_cash_total_nov">0</h2>
+            </div>
+            <div class="main_grid">
+                <h2>December</h2>
+                <a href="#container_dec">Details</a>
+                <h2 class="income_total_dec">0</h2>
+                <h2 class="expenses_total_dec">0</h2>
+                <h2 class="actual_cash_total_dec">0</h2>
+            </div>
+        </section>
+        <section class="container container_month" id="container_jan">
+            <header>
+                <h1>January</h1>
+                <table class="initial">
+                    <label class="initial_first">Initial Cash January:</label>
+                    <input class="initial_second" value="0" placeholder="enter a number"></input>
+                </table>
+            </header>
+            <main>
+                <main class="container_main">
+                    <form class="form">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item">Income name:</label>
+                              <input type="text" id="item"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount">Amount:</label>
+                              <input type="text" id="amount" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                      <div class="section_row">
+                        <div class="row">
+                          <div class="row_one"><span></span></div>
+                          <span class="income_amount">0</span>
+                          <span class="btn btn_delete"><button >Delete</button></span>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="actual">
+                        <h2>Total Income January:</h2>
+                        <h2 class="actual_second income_total_month_jan">0</h2>
+                    </div>
+                    <form class="form_expense">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_expense">Expense name:</label>
+                              <input type="text" id="item_expense"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_expense">Amount:</label>
+                              <input type="text" id="amount_expense" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                        <div class="section_row_expense">
+                          <div class="row_expense">
+                            <div class="row_one"><span></span></div>
+                            <span class="expense_amount">0</span>
+                            <span class="btn btn_delete"><button >Delete</button></span>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="actual">
+                          <h2>Total Expenses January:</h2>
+                          <h2 class="actual_second expenses_total_month_jan">0</h2>
+                      </div>
+                  </main>
+            </main>
+            <footer class="actual">
+                <h2>Actual Cash January:</h2>
+                <h2 class="actual_second actual_cash_month_jan">0</h2>
+            </footer>
+            <a href="#">Back to the top</a>
+        </section>
+        <section class="container container_month" id="container_feb">
+            <header>
+                <h1>February</h1>
+                <table class="initial">
+                    <label class="initial_first">Initial Cash February:</label>
+                    <input class="initial_second initial_second_feb" value="0" placeholder="enter a number"></input>
+                </table>
+            </header>
+            <main>
+                <main class="container_main">
+                    <form class="form_feb">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_feb">Income name:</label>
+                              <input type="text" id="item_feb"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_feb">Amount:</label>
+                              <input type="text" id="amount_feb" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                      <div class="section_row_feb">
+                        <div class="row row_feb">
+                          <div class="row_one"><span></span></div>
+                          <span class="income_amount_feb">0</span>
+                          <span class="btn btn_delete"><button >Delete</button></span>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="actual">
+                        <h2>Total Income February:</h2>
+                        <h2 class="actual_second income_total_month_feb">0</h2>
+                    </div>
+                    <form class="form_expense_feb">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_expense_feb">Expense name:</label>
+                              <input type="text" id="item_expense_feb"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_expense_feb">Amount:</label>
+                              <input type="text" id="amount_expense_feb" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                        <div class="section_row_expense_feb">
+                          <div class="row_expense row_expense_feb">
+                            <div class="row_one"><span></span></div>
+                            <span class="expense_amount_feb">0</span>
+                            <span class="btn btn_delete"><button >Delete</button></span>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="actual">
+                          <h2>Total Expenses February:</h2>
+                          <h2 class="actual_second expenses_total_month_feb">0</h2>
+                      </div>
+                  </main>
+            </main>
+            <footer class="actual">
+                <h2>Actual Cash February:</h2>
+                <h2 class="actual_second actual_cash_month_feb">0</h2>
+            </footer>
+            <a href="#">Back to the top</a>
+        </section>
+        <section class="container container_month" id="container_mar">
+            <header>
+                <h1>March</h1>
+                <table class="initial">
+                    <label class="initial_first">Initial Cash March:</label>
+                    <input class="initial_second initial_second_mar" value="0" placeholder="enter a number"></input>
+                </table>
+            </header>
+            <main>
+                <main class="container_main">
+                    <form class="form_mar">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_mar">Income name:</label>
+                              <input type="text" id="item_mar"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_mar">Amount:</label>
+                              <input type="text" id="amount_mar" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                      <div class="section_row_mar">
+                        <div class="row row_mar">
+                          <div class="row_one"><span></span></div>
+                          <span class="income_amount_mar">0</span>
+                          <span class="btn btn_delete"><button >Delete</button></span>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="actual">
+                        <h2>Total Income March:</h2>
+                        <h2 class="actual_second income_total_month_mar">0</h2>
+                    </div>
+                    <form class="form_expense_mar">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_expense_mar">Expense name:</label>
+                              <input type="text" id="item_expense_mar"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_expense_mar">Amount:</label>
+                              <input type="text" id="amount_expense_mar" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                        <div class="section_row_expense_mar">
+                          <div class="row_expense row_expense_mar">
+                            <div class="row_one"><span></span></div>
+                            <span class="expense_amount_mar">0</span>
+                            <span class="btn btn_delete"><button >Delete</button></span>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="actual">
+                          <h2>Total Expenses March:</h2>
+                          <h2 class="actual_second expenses_total_month_mar">0</h2>
+                      </div>
+                  </main>
+            </main>
+            <footer class="actual">
+                <h2>Actual Cash March:</h2>
+                <h2 class="actual_second actual_cash_month_mar">0</h2>
+            </footer>
+            <a href="#">Back to the top</a>
+        </section>
+        <section class="container container_month" id="container_apr">
+            <header>
+                <h1>April</h1>
+                <table class="initial">
+                    <label class="initial_first">Initial Cash April:</label>
+                    <input class="initial_second initial_second_apr" value="0" placeholder="enter a number"></input>
+                </table>
+            </header>
+            <main>
+                <main class="container_main">
+                    <form class="form_apr">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_apr">Income name:</label>
+                              <input type="text" id="item_apr"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_apr">Amount:</label>
+                              <input type="text" id="amount_apr" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                      <div class="section_row_apr">
+                        <div class="row row_apr">
+                          <div class="row_one"><span></span></div>
+                          <span class="income_amount_apr">0</span>
+                          <span class="btn btn_delete"><button >Delete</button></span>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="actual">
+                        <h2>Total Income April:</h2>
+                        <h2 class="actual_second income_total_month_apr">0</h2>
+                    </div>
+                    <form class="form_expense_apr">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_expense_apr">Expense name:</label>
+                              <input type="text" id="item_expense_apr"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_expense_apr">Amount:</label>
+                              <input type="text" id="amount_expense_apr" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                        <div class="section_row_expense_apr">
+                          <div class="row_expense row_expense_apr">
+                            <div class="row_one"><span></span></div>
+                            <span class="expense_amount_apr">0</span>
+                            <span class="btn btn_delete"><button >Delete</button></span>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="actual">
+                          <h2>Total Expenses April:</h2>
+                          <h2 class="actual_second expenses_total_month_apr">0</h2>
+                      </div>
+                  </main>
+            </main>
+            <footer class="actual">
+                <h2>Actual Cash April:</h2>
+                <h2 class="actual_second actual_cash_month_apr">0</h2>
+            </footer>
+            <a href="#">Back to the top</a>
+        </section>
+        <section class="container container_month" id="container_may">
+            <header>
+                <h1>May</h1>
+                <table class="initial">
+                    <label class="initial_first">Initial Cash May:</label>
+                    <input class="initial_second initial_second_may" value="0" placeholder="enter a number"></input>
+                </table>
+            </header>
+            <main>
+                <main class="container_main">
+                    <form class="form_may">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_may">Income name:</label>
+                              <input type="text" id="item_may"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_may">Amount:</label>
+                              <input type="text" id="amount_may" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                      <div class="section_row_may">
+                        <div class="row row_may">
+                          <div class="row_one"><span></span></div>
+                          <span class="income_amount_may">0</span>
+                          <span class="btn btn_delete"><button >Delete</button></span>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="actual">
+                        <h2>Total Income May:</h2>
+                        <h2 class="actual_second income_total_month_may">0</h2>
+                    </div>
+                    <form class="form_expense_may">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_expense_may">Expense name:</label>
+                              <input type="text" id="item_expense_may"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_expense_may">Amount:</label>
+                              <input type="text" id="amount_expense_may" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                        <div class="section_row_expense_may">
+                          <div class="row_expense row_expense_may">
+                            <div class="row_one"><span></span></div>
+                            <span class="expense_amount_may">0</span>
+                            <span class="btn btn_delete"><button >Delete</button></span>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="actual">
+                          <h2>Total Expenses May:</h2>
+                          <h2 class="actual_second expenses_total_month_may">0</h2>
+                      </div>
+                  </main>
+            </main>
+            <footer class="actual">
+                <h2>Actual Cash May:</h2>
+                <h2 class="actual_second actual_cash_month_may">0</h2>
+            </footer>
+            <a href="#">Back to the top</a>
+        </section>
+        <section class="container container_month" id="container_jun">
+            <header>
+                <h1>June</h1>
+                <table class="initial">
+                    <label class="initial_first">Initial Cash June:</label>
+                    <input class="initial_second initial_second_jun" value="0" placeholder="enter a number"></input>
+                </table>
+            </header>
+            <main>
+                <main class="container_main">
+                    <form class="form_jun">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_jun">Income name:</label>
+                              <input type="text" id="item_jun"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_jun">Amount:</label>
+                              <input type="text" id="amount_jun" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                      <div class="section_row_jun">
+                        <div class="row row_jun">
+                          <div class="row_one"><span></span></div>
+                          <span class="income_amount_jun">0</span>
+                          <span class="btn btn_delete"><button >Delete</button></span>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="actual">
+                        <h2>Total Income June:</h2>
+                        <h2 class="actual_second income_total_month_jun">0</h2>
+                    </div>
+                    <form class="form_expense_jun">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_expense_jun">Expense name:</label>
+                              <input type="text" id="item_expense_jun"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_expense_jun">Amount:</label>
+                              <input type="text" id="amount_expense_jun" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                        <div class="section_row_expense_jun">
+                          <div class="row_expense row_expense_jun">
+                            <div class="row_one"><span></span></div>
+                            <span class="expense_amount_jun">0</span>
+                            <span class="btn btn_delete"><button >Delete</button></span>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="actual">
+                          <h2>Total Expenses June:</h2>
+                          <h2 class="actual_second expenses_total_month_jun">0</h2>
+                      </div>
+                  </main>
+            </main>
+            <footer class="actual">
+                <h2>Actual Cash June:</h2>
+                <h2 class="actual_second actual_cash_month_jun">0</h2>
+            </footer>
+            <a href="#">Back to the top</a>
+        </section>
+        <section class="container container_month" id="container_jul">
+            <header>
+                <h1>July</h1>
+                <table class="initial">
+                    <label class="initial_first">Initial Cash July:</label>
+                    <input class="initial_second initial_second_jul" value="0" placeholder="enter a number"></input>
+                </table>
+            </header>
+            <main>
+                <main class="container_main">
+                    <form class="form_jul">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_jul">Income name:</label>
+                              <input type="text" id="item_jul"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_jul">Amount:</label>
+                              <input type="text" id="amount_jul" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                      <div class="section_row_jul">
+                        <div class="row row_jul">
+                          <div class="row_one"><span></span></div>
+                          <span class="income_amount_jul">0</span>
+                          <span class="btn btn_delete"><button >Delete</button></span>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="actual">
+                        <h2>Total Income July:</h2>
+                        <h2 class="actual_second income_total_month_jul">0</h2>
+                    </div>
+                    <form class="form_expense_jul">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_expense_jul">Expense name:</label>
+                              <input type="text" id="item_expense_jul"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_expense_jul">Amount:</label>
+                              <input type="text" id="amount_expense_jul" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                        <div class="section_row_expense_jul">
+                          <div class="row_expense row_expense_jul">
+                            <div class="row_one"><span></span></div>
+                            <span class="expense_amount_jul">0</span>
+                            <span class="btn btn_delete"><button >Delete</button></span>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="actual">
+                          <h2>Total Expenses July:</h2>
+                          <h2 class="actual_second expenses_total_month_jul">0</h2>
+                      </div>
+                  </main>
+            </main>
+            <footer class="actual">
+                <h2>Actual Cash July:</h2>
+                <h2 class="actual_second actual_cash_month_jul">0</h2>
+            </footer>
+            <a href="#">Back to the top</a>
+        </section>  
+        <section class="container container_month" id="container_aug">
+            <header>
+                <h1>August</h1>
+                <table class="initial">
+                    <label class="initial_first">Initial Cash August:</label>
+                    <input class="initial_second initial_second_aug" value="0" placeholder="enter a number"></input>
+                </table>
+            </header>
+            <main>
+                <main class="container_main">
+                    <form class="form_aug">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_aug">Income name:</label>
+                              <input type="text" id="item_aug"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_aug">Amount:</label>
+                              <input type="text" id="amount_aug" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                      <div class="section_row_aug">
+                        <div class="row row_aug">
+                          <div class="row_one"><span></span></div>
+                          <span class="income_amount_aug">0</span>
+                          <span class="btn btn_delete"><button >Delete</button></span>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="actual">
+                        <h2>Total Income August:</h2>
+                        <h2 class="actual_second income_total_month_aug">0</h2>
+                    </div>
+                    <form class="form_expense_aug">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_expense_aug">Expense name:</label>
+                              <input type="text" id="item_expense_aug"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_expense_aug">Amount:</label>
+                              <input type="text" id="amount_expense_aug" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                        <div class="section_row_expense_aug">
+                          <div class="row_expense row_expense_aug">
+                            <div class="row_one"><span></span></div>
+                            <span class="expense_amount_aug">0</span>
+                            <span class="btn btn_delete"><button >Delete</button></span>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="actual">
+                          <h2>Total Expenses August:</h2>
+                          <h2 class="actual_second expenses_total_month_aug">0</h2>
+                      </div>
+                  </main>
+            </main>
+            <footer class="actual">
+                <h2>Actual Cash August:</h2>
+                <h2 class="actual_second actual_cash_month_aug">0</h2>
+            </footer>
+            <a href="#">Back to the top</a>
+        </section>
+        <section class="container container_month" id="container_sep">
+            <header>
+                <h1>September</h1>
+                <table class="initial">
+                    <label class="initial_first">Initial Cash September:</label>
+                    <input class="initial_second initial_second_sep" value="0" placeholder="enter a number"></input>
+                </table>
+            </header>
+            <main>
+                <main class="container_main">
+                    <form class="form_sep">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_sep">Income name:</label>
+                              <input type="text" id="item_sep"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_sep">Amount:</label>
+                              <input type="text" id="amount_sep" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                      <div class="section_row_sep">
+                        <div class="row row_sep">
+                          <div class="row_one"><span></span></div>
+                          <span class="income_amount_sep">0</span>
+                          <span class="btn btn_delete"><button >Delete</button></span>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="actual">
+                        <h2>Total Income September:</h2>
+                        <h2 class="actual_second income_total_month_sep">0</h2>
+                    </div>
+                    <form class="form_expense_sep">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_expense_sep">Expense name:</label>
+                              <input type="text" id="item_expense_sep"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_expense_sep">Amount:</label>
+                              <input type="text" id="amount_expense_sep" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                        <div class="section_row_expense_sep">
+                          <div class="row_expense row_expense_sep">
+                            <div class="row_one"><span></span></div>
+                            <span class="expense_amount_sep">0</span>
+                            <span class="btn btn_delete"><button >Delete</button></span>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="actual">
+                          <h2>Total Expenses September:</h2>
+                          <h2 class="actual_second expenses_total_month_sep">0</h2>
+                      </div>
+                  </main>
+            </main>
+            <footer class="actual">
+                <h2>Actual Cash September:</h2>
+                <h2 class="actual_second actual_cash_month_sep">0</h2>
+            </footer>
+            <a href="#">Back to the top</a>
+        </section>
+        <section class="container container_month" id="container_oct">
+            <header>
+                <h1>October</h1>
+                <table class="initial">
+                    <label class="initial_first">Initial Cash October:</label>
+                    <input class="initial_second initial_second_oct" value="0" placeholder="enter a number"></input>
+                </table>
+            </header>
+            <main>
+                <main class="container_main">
+                    <form class="form_oct">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_oct">Income name:</label>
+                              <input type="text" id="item_oct"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_oct">Amount:</label>
+                              <input type="text" id="amount_oct" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                      <div class="section_row_oct">
+                        <div class="row row_oct">
+                          <div class="row_one"><span></span></div>
+                          <span class="income_amount_oct">0</span>
+                          <span class="btn btn_delete"><button >Delete</button></span>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="actual">
+                        <h2>Total Income October:</h2>
+                        <h2 class="actual_second income_total_month_oct">0</h2>
+                    </div>
+                    <form class="form_expense_oct">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_expense_oct">Expense name:</label>
+                              <input type="text" id="item_expense_oct"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_expense_oct">Amount:</label>
+                              <input type="text" id="amount_expense_oct" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                        <div class="section_row_expense_oct">
+                          <div class="row_expense row_expense_oct">
+                            <div class="row_one"><span></span></div>
+                            <span class="expense_amount_oct">0</span>
+                            <span class="btn btn_delete"><button >Delete</button></span>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="actual">
+                          <h2>Total Expenses October:</h2>
+                          <h2 class="actual_second expenses_total_month_oct">0</h2>
+                      </div>
+                  </main>
+            </main>
+            <footer class="actual">
+                <h2>Actual Cash October:</h2>
+                <h2 class="actual_second actual_cash_month_oct">0</h2>
+            </footer>
+            <a href="#">Back to the top</a>
+        </section>
+        <section class="container container_month" id="container_nov">
+            <header>
+                <h1>November</h1>
+                <table class="initial">
+                    <label class="initial_first">Initial Cash November:</label>
+                    <input class="initial_second initial_second_nov" value="0" placeholder="enter a number"></input>
+                </table>
+            </header>
+            <main>
+                <main class="container_main">
+                    <form class="form_nov">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_nov">Income name:</label>
+                              <input type="text" id="item_nov"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_nov">Amount:</label>
+                              <input type="text" id="amount_nov" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                      <div class="section_row_nov">
+                        <div class="row row_nov">
+                          <div class="row_one"><span></span></div>
+                          <span class="income_amount_nov">0</span>
+                          <span class="btn btn_delete"><button >Delete</button></span>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="actual">
+                        <h2>Total Income November:</h2>
+                        <h2 class="actual_second income_total_month_nov">0</h2>
+                    </div>
+                    <form class="form_expense_nov">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_expense_nov">Expense name:</label>
+                              <input type="text" id="item_expense_nov"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_expense_nov">Amount:</label>
+                              <input type="text" id="amount_expense_nov" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                        <div class="section_row_expense_nov">
+                          <div class="row_expense row_expense_nov">
+                            <div class="row_one"><span></span></div>
+                            <span class="expense_amount_nov">0</span>
+                            <span class="btn btn_delete"><button >Delete</button></span>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="actual">
+                          <h2>Total Expenses November:</h2>
+                          <h2 class="actual_second expenses_total_month_nov">0</h2>
+                      </div>
+                  </main>
+            </main>
+            <footer class="actual">
+                <h2>Actual Cash November:</h2>
+                <h2 class="actual_second actual_cash_month_nov">0</h2>
+            </footer>
+            <a href="#">Back to the top</a>
+        </section>
+        <section class="container container_month" id="container_dec">
+            <header>
+                <h1>December</h1>
+                <table class="initial">
+                    <label class="initial_first">Initial Cash December:</label>
+                    <input class="initial_second initial_second_dec" value="0" placeholder="enter a number"></input>
+                </table>
+            </header>
+            <main>
+                <main class="container_main">
+                    <form class="form_dec">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_dec">Income name:</label>
+                              <input type="text" id="item_dec"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_dec">Amount:</label>
+                              <input type="text" id="amount_dec" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                      <div class="section_row_dec">
+                        <div class="row row_dec">
+                          <div class="row_one"><span></span></div>
+                          <span class="income_amount_dec">0</span>
+                          <span class="btn btn_delete"><button >Delete</button></span>
+                        </div>
+                      </div>
+                    </section>
+                    <div class="actual">
+                        <h2>Total Income December:</h2>
+                        <h2 class="actual_second income_total_month_dec">0</h2>
+                    </div>
+                    <form class="form_expense_dec">        
+                        <div class="form_group">
+                            <div class="form_group_div">
+                              <label for="item_expense_dec">Expense name:</label>
+                              <input type="text" id="item_expense_dec"/>
+                            </div>
+                            <div class="form_group_div">
+                              <label for="amount_expense_dec">Amount:</label>
+                              <input type="text" id="amount_expense_dec" value="0" placeholder="enter a number"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add</button>
+                    </form>
+                    <section>
+                        <div class="section_row_expense_dec">
+                          <div class="row_expense row_expense_dec">
+                            <div class="row_one"><span></span></div>
+                            <span class="expense_amount_dec">0</span>
+                            <span class="btn btn_delete"><button >Delete</button></span>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="actual">
+                          <h2>Total Expenses December:</h2>
+                          <h2 class="actual_second expenses_total_month_dec">0</h2>
+                      </div>
+                  </main>
+            </main>
+            <footer class="actual">
+                <h2>Actual Cash December:</h2>
+                <h2 class="actual_second actual_cash_month_dec">0</h2>
+            </footer>
+            <a href="#">Back to the top</a>
+        </section> 
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
