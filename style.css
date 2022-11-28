@@ -139,7 +139,7 @@ main h2:first-child {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 .form_group_div {
     display: flex;
@@ -189,13 +189,12 @@ main h2:first-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid violet;
+    border-bottom: 2px solid blue;
     /* width: 350px; */
     margin: 0 auto;
     
 }
 .row_one {
-    background-color: green;
     width: 60%;
 }
 .btn_delete {

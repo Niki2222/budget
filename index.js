@@ -89,20 +89,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         addTotalExpense();
         addFinalTotal();
     });
-    // let initialCashMonthElement = document.querySelector('.initial_second');
-    // initialCashMonthElement.addEventListener('keyup', function(event) {
-    //     addTotalMonthJan();
-    // });
       
     function addTotalMonthJan() {
         let total = 0;
-        // let initialCashMonthElement = document.querySelector('.initial_second');
-        // let initialCashMonth = parseFloat(initialCashMonthElement.value);
         let totalIncomeMonthElement = document.querySelector('.income_total_month_jan');
         let totalIncomeMonth = parseFloat(totalIncomeMonthElement.innerText);
         let totalExpensesMonthElement = document.querySelector('.expenses_total_month_jan');
         let totalExpensesMonth = parseFloat(totalExpensesMonthElement.innerText);
-        total = parseFloat(/*initialCashMonth + */ totalIncomeMonth - totalExpensesMonth);
+        total = parseFloat(totalIncomeMonth - totalExpensesMonth);
         let actualCashMonth = document.querySelector('.actual_cash_month_jan');
         actualCashMonth.innerText = total;
         document.querySelector('.actual_cash_total_jan').innerText = total;
@@ -159,19 +153,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
             addFinalTotal();
         }   
         
-        // function updateTotalIncomeFeb() {
-        //     let parentRow = document.querySelector('.section_row_feb');
-        //     let rows = parentRow.querySelectorAll('.row_feb');
-        //     let total = 0;
-        //     for (let i = 0; i < rows.length; i++) {
-        //         let row = rows[i];
-        //         let priceElement = row.querySelector('.income_amount_feb');
-        //         let amount = parseFloat(priceElement.innerText);
-        //         total = total + amount;
-        //     }
-        //     document.querySelector('.income_total_month_feb').innerText = total;
-        //     document.querySelector('.income_total_feb').innerText = total;
-        // }
         updateTotalIncomeFeb();
         addTotalMonthFeb();
         addTotalIncome();
@@ -213,20 +194,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         addTotalExpense();
         addFinalTotal();
     });
-    // let initialCashMonthElementFeb = document.querySelector('.initial_second_feb');
-    // initialCashMonthElementFeb.addEventListener('keyup', function(event) {
-    //     addTotalMonthFeb();
-    // });
-      
+    
     function addTotalMonthFeb() {
         let total = 0;
-        // let initialCashMonthElement = document.querySelector('.initial_second_feb');
-        // let initialCashMonth = parseFloat(initialCashMonthElement.value);
         let totalIncomeMonthElement = document.querySelector('.income_total_month_feb');
         let totalIncomeMonth = parseFloat(totalIncomeMonthElement.innerText);
         let totalExpensesMonthElement = document.querySelector('.expenses_total_month_feb');
         let totalExpensesMonth = parseFloat(totalExpensesMonthElement.innerText);
-        total = parseFloat(/*initialCashMonth + */totalIncomeMonth - totalExpensesMonth);
+        total = parseFloat(totalIncomeMonth - totalExpensesMonth);
         let actualCashMonth = document.querySelector('.actual_cash_month_feb');
         actualCashMonth.innerText = total;
         document.querySelector('.actual_cash_total_feb').innerText = total;
@@ -282,19 +257,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
             addFinalTotal();
         }   
         
-        // function updateTotalIncomeMar() {
-        //     let parentRow = document.querySelector('.section_row_mar');
-        //     let rows = parentRow.querySelectorAll('.row_mar');
-        //     let total = 0;
-        //     for (let i = 0; i < rows.length; i++) {
-        //         let row = rows[i];
-        //         let priceElement = row.querySelector('.income_amount_mar');
-        //         let amount = parseFloat(priceElement.innerText);
-        //         total = total + amount;
-        //     }
-        //     document.querySelector('.income_total_month_mar').innerText = total;
-        //     document.querySelector('.income_total_mar').innerText = total;
-        // }
         updateTotalIncomeMar();
         addTotalMonthMar();
         addTotalIncome();
@@ -336,20 +298,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         addTotalExpense();
         addFinalTotal();
     });
-    // let initialCashMonthElementMar = document.querySelector('.initial_second_mar');
-    // initialCashMonthElementMar.addEventListener('keyup', function(event) {
-    //     addTotalMonthMar();
-    // });
-      
+    
     function addTotalMonthMar() {
         let total = 0;
-        // let initialCashMonthElement = document.querySelector('.initial_second_mar');
-        // let initialCashMonth = parseFloat(initialCashMonthElement.value);
         let totalIncomeMonthElement = document.querySelector('.income_total_month_mar');
         let totalIncomeMonth = parseFloat(totalIncomeMonthElement.innerText);
         let totalExpensesMonthElement = document.querySelector('.expenses_total_month_mar');
         let totalExpensesMonth = parseFloat(totalExpensesMonthElement.innerText);
-        total = parseFloat(/*initialCashMonth + */totalIncomeMonth - totalExpensesMonth);
+        total = parseFloat(totalIncomeMonth - totalExpensesMonth);
         let actualCashMonth = document.querySelector('.actual_cash_month_mar');
         actualCashMonth.innerText = total;
         document.querySelector('.actual_cash_total_mar').innerText = total;
@@ -406,19 +362,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
             addFinalTotal();
         }   
         
-        // function updateTotalIncomeApr() {
-        //     let parentRow = document.querySelector('.section_row_apr');
-        //     let rows = parentRow.querySelectorAll('.row_apr');
-        //     let total = 0;
-        //     for (let i = 0; i < rows.length; i++) {
-        //         let row = rows[i];
-        //         let priceElement = row.querySelector('.income_amount_apr');
-        //         let amount = parseFloat(priceElement.innerText);
-        //         total = total + amount;
-        //     }
-        //     document.querySelector('.income_total_month_apr').innerText = total;
-        //     document.querySelector('.income_total_apr').innerText = total;
-        // }
         updateTotalIncomeApr();
         addTotalMonthApr();
         addTotalIncome();
@@ -460,20 +403,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         addTotalExpense();
         addFinalTotal();
     });
-    // let initialCashMonthElementApr = document.querySelector('.initial_second_apr');
-    // initialCashMonthElementApr.addEventListener('keyup', function(event) {
-    //     addTotalMonthApr();
-    // });
       
     function addTotalMonthApr() {
         let total = 0;
-        // let initialCashMonthElement = document.querySelector('.initial_second_apr');
-        // let initialCashMonth = parseFloat(initialCashMonthElement.value);
         let totalIncomeMonthElement = document.querySelector('.income_total_month_apr');
         let totalIncomeMonth = parseFloat(totalIncomeMonthElement.innerText);
         let totalExpensesMonthElement = document.querySelector('.expenses_total_month_apr');
         let totalExpensesMonth = parseFloat(totalExpensesMonthElement.innerText);
-        total = parseFloat(/*initialCashMonth + */totalIncomeMonth - totalExpensesMonth);
+        total = parseFloat(totalIncomeMonth - totalExpensesMonth);
         let actualCashMonth = document.querySelector('.actual_cash_month_apr');
         actualCashMonth.innerText = total;
         document.querySelector('.actual_cash_total_apr').innerText = total;
@@ -530,19 +467,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
             addFinalTotal();
         }   
          
-        // function updateTotalIncomeMay() {
-        //     let parentRow = document.querySelector('.section_row_may');
-        //     let rows = parentRow.querySelectorAll('.row_may');
-        //     let total = 0;
-        //     for (let i = 0; i < rows.length; i++) {
-        //         let row = rows[i];
-        //         let priceElement = row.querySelector('.income_amount_may');
-        //         let amount = parseFloat(priceElement.innerText);
-        //         total = total + amount;
-        //     }
-        //     document.querySelector('.income_total_month_may').innerText = total;
-        //     document.querySelector('.income_total_may').innerText = total;
-        // }
         updateTotalIncomeMay();
         addTotalMonthMay();
         addTotalIncome();
@@ -584,20 +508,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         addTotalExpense();
         addFinalTotal();
     });
-    // let initialCashMonthElementMay = document.querySelector('.initial_second_may');
-    // initialCashMonthElementMay.addEventListener('keyup', function(event) {
-    //     addTotalMonthMay();
-    // });
-       
+    
     function addTotalMonthMay() {
         let total = 0;
-        // let initialCashMonthElement = document.querySelector('.initial_second_may');
-        // let initialCashMonth = parseFloat(initialCashMonthElement.value);
         let totalIncomeMonthElement = document.querySelector('.income_total_month_may');
         let totalIncomeMonth = parseFloat(totalIncomeMonthElement.innerText);
         let totalExpensesMonthElement = document.querySelector('.expenses_total_month_may');
         let totalExpensesMonth = parseFloat(totalExpensesMonthElement.innerText);
-        total = parseFloat(/*initialCashMonth + */totalIncomeMonth - totalExpensesMonth);
+        total = parseFloat(totalIncomeMonth - totalExpensesMonth);
         let actualCashMonth = document.querySelector('.actual_cash_month_may');
         actualCashMonth.innerText = total;
         document.querySelector('.actual_cash_total_may').innerText = total;
@@ -654,19 +572,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
             addFinalTotal();
         }   
           
-        // function updateTotalIncomeJun() {
-        //     let parentRow = document.querySelector('.section_row_jun');
-        //     let rows = parentRow.querySelectorAll('.row_jun');
-        //     let total = 0;
-        //     for (let i = 0; i < rows.length; i++) {
-        //         let row = rows[i];
-        //         let priceElement = row.querySelector('.income_amount_jun');
-        //         let amount = parseFloat(priceElement.innerText);
-        //         total = total + amount;
-        //     }
-        //     document.querySelector('.income_total_month_jun').innerText = total;
-        //     document.querySelector('.income_total_jun').innerText = total;
-        // }
         updateTotalIncomeJun();
         addTotalMonthJun();
         addTotalIncome();
@@ -708,20 +613,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         addTotalExpense();
         addFinalTotal();
     });
-    // let initialCashMonthElementJun = document.querySelector('.initial_second_jun');
-    // initialCashMonthElementJun.addEventListener('keyup', function(event) {
-    //     addTotalMonthJun();
-    // });
-        
+    
     function addTotalMonthJun() {
         let total = 0;
-        // let initialCashMonthElement = document.querySelector('.initial_second_jun');
-        // let initialCashMonth = parseFloat(initialCashMonthElement.value);
         let totalIncomeMonthElement = document.querySelector('.income_total_month_jun');
         let totalIncomeMonth = parseFloat(totalIncomeMonthElement.innerText);
         let totalExpensesMonthElement = document.querySelector('.expenses_total_month_jun');
         let totalExpensesMonth = parseFloat(totalExpensesMonthElement.innerText);
-        total = parseFloat(/*initialCashMonth + */totalIncomeMonth - totalExpensesMonth);
+        total = parseFloat(totalIncomeMonth - totalExpensesMonth);
         let actualCashMonth = document.querySelector('.actual_cash_month_jun');
         actualCashMonth.innerText = total;
         document.querySelector('.actual_cash_total_jun').innerText = total;
@@ -778,19 +677,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
             addFinalTotal();
         }   
          
-        // function updateTotalIncomeJul() {
-        //     let parentRow = document.querySelector('.section_row_jul');
-        //     let rows = parentRow.querySelectorAll('.row_jul');
-        //     let total = 0;
-        //     for (let i = 0; i < rows.length; i++) {
-        //         let row = rows[i];
-        //         let priceElement = row.querySelector('.income_amount_jul');
-        //         let amount = parseFloat(priceElement.innerText);
-        //         total = total + amount;
-        //     }
-        //     document.querySelector('.income_total_month_jul').innerText = total;
-        //     document.querySelector('.income_total_jul').innerText = total;
-        // }
         updateTotalIncomeJul();
         addTotalMonthJul();
         addTotalIncome();
@@ -832,20 +718,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         addTotalExpense();
         addFinalTotal();
     });
-    // let initialCashMonthElementJul = document.querySelector('.initial_second_jul');
-    // initialCashMonthElementJul.addEventListener('keyup', function(event) {
-    //     addTotalMonthJul();
-    // });
-         
+    
     function addTotalMonthJul() {
         let total = 0;
-        // let initialCashMonthElement = document.querySelector('.initial_second_jul');
-        // let initialCashMonth = parseFloat(initialCashMonthElement.value);
         let totalIncomeMonthElement = document.querySelector('.income_total_month_jul');
         let totalIncomeMonth = parseFloat(totalIncomeMonthElement.innerText);
         let totalExpensesMonthElement = document.querySelector('.expenses_total_month_jul');
         let totalExpensesMonth = parseFloat(totalExpensesMonthElement.innerText);
-        total = parseFloat(/*initialCashMonth + */totalIncomeMonth - totalExpensesMonth);
+        total = parseFloat(totalIncomeMonth - totalExpensesMonth);
         let actualCashMonth = document.querySelector('.actual_cash_month_jul');
         actualCashMonth.innerText = total;
         document.querySelector('.actual_cash_total_jul').innerText = total;
@@ -902,19 +782,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
             addFinalTotal();
         }   
            
-        // function updateTotalIncomeAug() {
-        //     let parentRow = document.querySelector('.section_row_aug');
-        //     let rows = parentRow.querySelectorAll('.row_aug');
-        //     let total = 0;
-        //     for (let i = 0; i < rows.length; i++) {
-        //         let row = rows[i];
-        //         let priceElement = row.querySelector('.income_amount_aug');
-        //         let amount = parseFloat(priceElement.innerText);
-        //         total = total + amount;
-        //     }
-        //     document.querySelector('.income_total_month_aug').innerText = total;
-        //     document.querySelector('.income_total_aug').innerText = total;
-        // }
         updateTotalIncomeAug();
         addTotalMonthAug();
         addTotalIncome();
@@ -956,20 +823,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         addTotalExpense();
         addFinalTotal();
     });
-    // let initialCashMonthElementAug = document.querySelector('.initial_second_aug');
-    // initialCashMonthElementAug.addEventListener('keyup', function(event) {
-    //     addTotalMonthAug();
-    // });
-         
+   
     function addTotalMonthAug() {
         let total = 0;
-        // let initialCashMonthElement = document.querySelector('.initial_second_aug');
-        // let initialCashMonth = parseFloat(initialCashMonthElement.value);
         let totalIncomeMonthElement = document.querySelector('.income_total_month_aug');
         let totalIncomeMonth = parseFloat(totalIncomeMonthElement.innerText);
         let totalExpensesMonthElement = document.querySelector('.expenses_total_month_aug');
         let totalExpensesMonth = parseFloat(totalExpensesMonthElement.innerText);
-        total = parseFloat(/*initialCashMonth + */totalIncomeMonth - totalExpensesMonth);
+        total = parseFloat(totalIncomeMonth - totalExpensesMonth);
         let actualCashMonth = document.querySelector('.actual_cash_month_aug');
         actualCashMonth.innerText = total;
         document.querySelector('.actual_cash_total_aug').innerText = total;
@@ -1025,20 +886,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
             addTotalIncome();
             addFinalTotal();
         }   
-           
-        // function updateTotalIncomeSep() {
-        //     let parentRow = document.querySelector('.section_row_sep');
-        //     let rows = parentRow.querySelectorAll('.row_sep');
-        //     let total = 0;
-        //     for (let i = 0; i < rows.length; i++) {
-        //         let row = rows[i];
-        //         let priceElement = row.querySelector('.income_amount_sep');
-        //         let amount = parseFloat(priceElement.innerText);
-        //         total = total + amount;
-        //     }
-        //     document.querySelector('.income_total_month_sep').innerText = total;
-        //     document.querySelector('.income_total_sep').innerText = total;
-        // }
+
         updateTotalIncomeSep();
         addTotalMonthSep();
         addTotalIncome();
@@ -1080,20 +928,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         addTotalExpense();
         addFinalTotal();
     });
-    // let initialCashMonthElementSep = document.querySelector('.initial_second_sep');
-    // initialCashMonthElementSep.addEventListener('keyup', function(event) {
-    //     addTotalMonthSep();
-    // });
-         
+    
     function addTotalMonthSep() {
         let total = 0;
-        // let initialCashMonthElement = document.querySelector('.initial_second_sep');
-        // let initialCashMonth = parseFloat(initialCashMonthElement.value);
         let totalIncomeMonthElement = document.querySelector('.income_total_month_sep');
         let totalIncomeMonth = parseFloat(totalIncomeMonthElement.innerText);
         let totalExpensesMonthElement = document.querySelector('.expenses_total_month_sep');
         let totalExpensesMonth = parseFloat(totalExpensesMonthElement.innerText);
-        total = parseFloat(/*initialCashMonth + */totalIncomeMonth - totalExpensesMonth);
+        total = parseFloat(totalIncomeMonth - totalExpensesMonth);
         let actualCashMonth = document.querySelector('.actual_cash_month_sep');
         actualCashMonth.innerText = total;
         document.querySelector('.actual_cash_total_sep').innerText = total;
@@ -1150,19 +992,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
             addFinalTotal();
         }   
            
-        // function updateTotalIncomeOct() {
-        //     let parentRow = document.querySelector('.section_row_oct');
-        //     let rows = parentRow.querySelectorAll('.row_oct');
-        //     let total = 0;
-        //     for (let i = 0; i < rows.length; i++) {
-        //         let row = rows[i];
-        //         let priceElement = row.querySelector('.income_amount_oct');
-        //         let amount = parseFloat(priceElement.innerText);
-        //         total = total + amount;
-        //     }
-        //     document.querySelector('.income_total_month_oct').innerText = total;
-        //     document.querySelector('.income_total_oct').innerText = total;
-        // }
         updateTotalIncomeOct();
         addTotalMonthOct();
         addTotalIncome();
@@ -1204,20 +1033,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         addTotalExpense();
         addFinalTotal();
     });
-    // let initialCashMonthElementOct = document.querySelector('.initial_second_oct');
-    // initialCashMonthElementOct.addEventListener('keyup', function(event) {
-    //     addTotalMonthOct();
-    // });
-         
+    
     function addTotalMonthOct() {
         let total = 0;
-        // let initialCashMonthElement = document.querySelector('.initial_second_oct');
-        // let initialCashMonth = parseFloat(initialCashMonthElement.value);
         let totalIncomeMonthElement = document.querySelector('.income_total_month_oct');
         let totalIncomeMonth = parseFloat(totalIncomeMonthElement.innerText);
         let totalExpensesMonthElement = document.querySelector('.expenses_total_month_oct');
         let totalExpensesMonth = parseFloat(totalExpensesMonthElement.innerText);
-        total = parseFloat(/*initialCashMonth + */totalIncomeMonth - totalExpensesMonth);
+        total = parseFloat(totalIncomeMonth - totalExpensesMonth);
         let actualCashMonth = document.querySelector('.actual_cash_month_oct');
         actualCashMonth.innerText = total;
         document.querySelector('.actual_cash_total_oct').innerText = total;
@@ -1274,19 +1097,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
             addFinalTotal();
         }   
            
-        // function updateTotalIncomeNov() {
-        //     let parentRow = document.querySelector('.section_row_nov');
-        //     let rows = parentRow.querySelectorAll('.row_nov');
-        //     let total = 0;
-        //     for (let i = 0; i < rows.length; i++) {
-        //         let row = rows[i];
-        //         let priceElement = row.querySelector('.income_amount_nov');
-        //         let amount = parseFloat(priceElement.innerText);
-        //         total = total + amount;
-        //     }
-        //     document.querySelector('.income_total_month_nov').innerText = total;
-        //     document.querySelector('.income_total_nov').innerText = total;
-        // }
         updateTotalIncomeNov();
         addTotalMonthNov();
         addTotalIncome();
@@ -1328,20 +1138,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         addTotalExpense();
         addFinalTotal();
     });
-    // let initialCashMonthElementNov = document.querySelector('.initial_second_nov');
-    // initialCashMonthElementNov.addEventListener('keyup', function(event) {
-    //     addTotalMonthNov();
-    // });
          
     function addTotalMonthNov() {
         let total = 0;
-        // let initialCashMonthElement = document.querySelector('.initial_second_nov');
-        // let initialCashMonth = parseFloat(initialCashMonthElement.value);
         let totalIncomeMonthElement = document.querySelector('.income_total_month_nov');
         let totalIncomeMonth = parseFloat(totalIncomeMonthElement.innerText);
         let totalExpensesMonthElement = document.querySelector('.expenses_total_month_nov');
         let totalExpensesMonth = parseFloat(totalExpensesMonthElement.innerText);
-        total = parseFloat(/*initialCashMonth + */totalIncomeMonth - totalExpensesMonth);
+        total = parseFloat(totalIncomeMonth - totalExpensesMonth);
         let actualCashMonth = document.querySelector('.actual_cash_month_nov');
         actualCashMonth.innerText = total;
         document.querySelector('.actual_cash_total_nov').innerText = total;
@@ -1397,20 +1201,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
             addTotalIncome();
             addFinalTotal();
         }   
-          
-        // function updateTotalIncomeDec() {
-        //     let parentRow = document.querySelector('.section_row_dec');
-        //     let rows = parentRow.querySelectorAll('.row_dec');
-        //     let total = 0;
-        //     for (let i = 0; i < rows.length; i++) {
-        //         let row = rows[i];
-        //         let priceElement = row.querySelector('.income_amount_dec');
-        //         let amount = parseFloat(priceElement.innerText);
-        //         total = total + amount;
-        //     }
-        //     document.querySelector('.income_total_month_dec').innerText = total;
-        //     document.querySelector('.income_total_dec').innerText = total;
-        // }
+
         updateTotalIncomeDec();
         addTotalMonthDec();
         addTotalIncome();
@@ -1452,20 +1243,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         addTotalExpense();
         addFinalTotal();
     });
-    // let initialCashMonthElementDec = document.querySelector('.initial_second_dec');
-    // initialCashMonthElementDec.addEventListener('keyup', function(event) {
-    //     addTotalMonthDec();
-    // });
-         
+    
     function addTotalMonthDec() {
         let total = 0;
-        // let initialCashMonthElement = document.querySelector('.initial_second_dec');
-        // let initialCashMonth = parseFloat(initialCashMonthElement.value);
         let totalIncomeMonthElement = document.querySelector('.income_total_month_dec');
         let totalIncomeMonth = parseFloat(totalIncomeMonthElement.innerText);
         let totalExpensesMonthElement = document.querySelector('.expenses_total_month_dec');
         let totalExpensesMonth = parseFloat(totalExpensesMonthElement.innerText);
-        total = parseFloat(/*initialCashMonth + */totalIncomeMonth - totalExpensesMonth);
+        total = parseFloat(totalIncomeMonth - totalExpensesMonth);
         let actualCashMonth = document.querySelector('.actual_cash_month_dec');
         actualCashMonth.innerText = total;
         document.querySelector('.actual_cash_total_dec').innerText = total;
@@ -1487,7 +1272,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
         let totalIncomeOct = parseFloat(document.querySelector('.income_total_oct').innerText);
         let totalIncomeNov = parseFloat(document.querySelector('.income_total_nov').innerText);
         let totalIncomeDec = parseFloat(document.querySelector('.income_total_dec').innerText);
-        
         total = totalIncomeJan + totalIncomeFeb + totalIncomeMar + totalIncomeApr + totalIncomeMay + totalIncomeJun
             + totalIncomeJul + totalIncomeAug + totalIncomeSep + totalIncomeOct + totalIncomeNov + totalIncomeDec;
         document.querySelector('.total_income_year').innerText = total;
@@ -1509,14 +1293,11 @@ document.addEventListener('DOMContentLoaded', function(event) {
         let totalExpensesOct = parseFloat(document.querySelector('.expenses_total_oct').innerText);
         let totalExpensesNov = parseFloat(document.querySelector('.expenses_total_nov').innerText);
         let totalExpensesDec = parseFloat(document.querySelector('.expenses_total_dec').innerText);
-        
         total = totalExpensesJan + totalExpensesFeb + totalExpensesMar + totalExpensesApr + totalExpensesMay + totalExpensesJun
             + totalExpensesJul + totalExpensesAug + totalExpensesSep + totalExpensesOct + totalExpensesNov + totalExpensesDec;
         document.querySelector('.total_expenses_year').innerText = total;
     }
     addTotalExpense();
-
-    
 
     function addFinalTotal() {
         let totalIncomeYear = parseFloat(document.querySelector('.total_income_year').innerText);
@@ -1525,8 +1306,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
         document.querySelector('.total_final_year').innerText = total;
     }
     addFinalTotal();
-    
-
 });
 
 
