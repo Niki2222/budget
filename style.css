@@ -57,6 +57,7 @@ main .container {
 .main_grid a {
     text-decoration: none;
     color: darkblue;
+    font-size: 0.8rem;
 }
 main h2 {
     font-size: 1rem;
