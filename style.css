@@ -45,7 +45,6 @@ header h4 {
 main .container {
     max-width: 350px;
     margin: 0 auto;
-    /* border: 1px solid red; */
     padding: 20px 5px;
 }
 .main_grid {
@@ -139,7 +138,6 @@ main h2:first-child {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid blue; */
 }
 .form_group_div {
     display: flex;
@@ -190,7 +188,6 @@ main h2:first-child {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid blue;
-    /* width: 350px; */
     margin: 0 auto;
     
 }
@@ -200,7 +197,9 @@ main h2:first-child {
 .btn_delete {
     background-color: red;
     cursor: pointer;
+    overflow: hidden;
 }
+
 
 
 
